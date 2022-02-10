@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Technical Documentation Page</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <main id="main-doc">
+
+      <nav id="navbar">
+        <header><h1>HTML Documentation</h1></header>
+        <ul>
+          <li><a class="nav-link" href="#Getting_started_with_HTML">Getting started with HTML</a></li>
+          <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+          <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+          <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+          <li><a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+          <li><a class="nav-link" href="#HTML_comments">HTML comments</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+<div class="section-wrapper">
+    <section class="main-section" id="Getting_started_with_HTML">
+      <header>Getting started with HTML</header>
+      <br>
+      <article>
+  <p>In this article we cover the absolute basics of HTML. To get you started, this article defines elements,
+  attributes, and all the other important terms you may have heard. It also explains where these fit into HTML.
+  You will learn how HTML elements are structured, how a typical HTML page is structured, and other
+  important basic language features. Along the way, there will be an opportunity to play with HTML too!</p>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th scope="row">Prerequisites:</th>
+        <td>
+          Basic computer literacy,
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software" target="_blank">basic software installed</a>, and basic knowledge of
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">working with files</a>.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Objective:</th>
+        <td>
+          To gain basic familiarity with HTML, and practice writing a few HTML
+          elements.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      </article>
+    </section>
+
+  <section class="main-section" id="What_is_HTML?">
+    <header>What is HTML?</header>
+      <article>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank">HTML</a> (Hypertext Markup Language) is not a programming language. It is a <em>markup language</em> that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of <a href="https://developer.mozilla.org/en-US/docs/Glossary/Element">elements</a>, which you use to enclose, wrap, or <em>mark up</em> different parts of content to make it appear or act in a certain way. The enclosing <a href="https://developer.mozilla.org/en-US/docs/Glossary/Tag" target="_blank">tags</a> can make content into a hyperlink to connect to another page, italicize words, and so on.&nbsp; For example, consider the following line of text:</p>
+    <code>My cat is very grumpy</code>
+    <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a
+      <br>paragraph (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">&lt;p&gt;</a>) element:</p>
+    <code>&lt;p&gtMy cat is very grumpy&lt;/p&gt;</code>
+    <div class="note"><p><strong>Note:</strong> Tags in HTML are not case-sensitive. This means they can be written in uppercase or lowercase. For example, a <span><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">&lt;title&gt;</a></span>
+      tag could be written as <span>&lt;title&gt;</span>
+      <span>&lt;TITLE&gt;</span><span>&lt;title&gt;</span>
+      <span>&lt;TITLE&gt;</span> etc...
+      and it will work. However, it is best
+       practice to write all tags in lowercase for
+        consistency and readability.
+    </p>
+  </div>
+    </article>
+  </section>
+
+  <section class="main-section" id="Anatomy_of_an_HTML_element">
+        <header>Anatomy of an HTML element</header>
+        <p>Let's further explore our paragraph element from the previous section:</p>
+      <article>
+        <p>The anatomy of our element is:</p>
+        <ul>
+          <li><strong>The opening tag:</strong> This consists of the name of the element (in this example, <em>p</em> for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+          <li><strong>The content:</strong> This is the content of the element. In this example, it is the paragraph text.</li>
+          <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+        </ul>
+        <p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Attributes">
+      <header>Attributes</header>
+      <article>
+        <p>Elements can also have attributes. Attributes look like this:</p>
+        <p>Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.</p>
+        <p>An attribute should have:</p>
+        <br>
+        <ul>
+          <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+          <li>The attribute name, followed by an equal sign.</li>
+          <li>An attribute value, wrapped with opening and closing quote marks.</li>
+        </ul>
+          <br>
+        <h3>Active learning: Adding attributes to an element</h3>
+        <p>Another example of an element is <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">&lt;a&gt;</a>. This stands for <em>anchor</em>. An anchor can make the text it encloses into a hyperlink. Anchors can take a number of attributes, but several are as follows:</p>
+        <ul>
+          <li><strong>href</strong>: This attribute's&nbsp;value specifies the web address for the link. For example: <strong>href="https://www.mozilla.org/"</strong></li>
+          <li><strong>title</strong>: The <b>title</b> attribute specifies extra information about the link, such as a description of the page that is being linked to. For example, <strong>title="The Mozilla homepage"</strong>. This appears as a tooltip when a cursor hovers over the element.</li>
+          <li><strong>target</strong>: The <b>target</b> attribute specifies the browsing context used to display the link. For example, <strong>target="_blank"</strong> will display the link in a new tab.&nbsp;If you want to display the linked content in the current tab, just omit this attribute.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Anatomy_of_an_HTML_document">
+      <header>Anatomy of an HTML document</header>
+      <br>
+      <article>
+      <p>Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:</p>
+<div>
+  <code>&lt;!DOCTYPE html&gt;
+  <br>
+&lt;html&gt;
+  <br>
+  &lt;head&gt;
+  <br>
+    &lt;meta charset="utf-8"&gt;
+    <br>
+    &lt;title&gt;My test page&lt;/title&gt;
+    <br>
+  &lt;/head&gt;
+  <br>
+  &lt;body&gt;
+  <br>
+    &lt;p&gt;This is my page&lt;/p&gt;
+    <br>
+  &lt;/body&gt;
+  <br>
+&lt;/html&gt;
+</code>
+</div>
+      <p>Here we have:</p>
+      <br>
+    <ol>
+        <li><b>&lt;!DOCTYPE html&gt;</b>: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. Doctypes used to look something like this:
+          <code>
+          &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+      </code>
+
+      More recently, the doctype is a historical artifact that needs to be included for everything else to work right.&nbsp;<b>&lt;!DOCTYPE html&gt;</b> is the shortest string of characters that counts as a valid doctype. That is all you need to know!
+        </li>
+        <li><b>&lt;html&gt;&lt;/html&gt;</b>: The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank"><b>&lt;html&gt;</b></a> element. This element wraps all the content on the page. It is sometimes known as the root element.</li>
+        <li><b>&lt;head&gt;&lt;/head&gt;</b>: The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank"><b>&lt;head&gt;</b></a> element. This element acts as a container for everything you want to include on the HTML page, <strong>that isn't the content</strong> the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You'll learn more about this in the next article of the series.
+        </li>
+        <li><b>&lt;meta charset="utf-8"&gt;</b>: This element specifies the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</li>
+        <li><b>&lt;title&gt;&lt;/title&gt;</b>: The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank"><b>&lt;title&gt;</b></a> element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</li>
+        <li><b>&lt;body&gt;&lt;/body&gt;</b>: The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank"><b>&lt;body&gt;</b></a> element. This contains <em>all</em> the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.</li>
+    </ol>
+      </article>
+    </section>
+
+    <section class="main-section" id="HTML_comments">
+      <header>HTML comments</header>
+      <article>
+        <p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.</p>
+        <p>To write an HTML&nbsp;comment, wrap it in the special markers <b>&lt;!--</b> and <b>--&gt;</b>. For example:
+        </p>
+        <code>&lt;p&gt;I'm not inside a comment&lt;/p&gt;
+            &lt;!-- &lt;p&gt;I am!&lt;/p&gt; --&gt;
+        </code>
+      </article>
+    </section>
+
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+                target="_blank">MDN</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+</div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>Created By <span><a href="http://www.andreaborelli.it/" target="_blank">Andrea Borelli</a></span> | &copy; 2022 All rights reserved.</p>
+</footer>
+
+</body>
+</html>
